@@ -1,2 +1,0 @@
-# abc
-This is abc
