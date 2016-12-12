@@ -7,11 +7,12 @@ def createTable():
 
       cur = conn.cursor()
       cur.execute('''CREATE TABLE company
-       (ID INT PRIMARY KEY     NOT NULL,
-       NAME           TEXT    NOT NULL,
-       AGE            INT     NOT NULL,
-       ADDRESS        CHAR(50),
-       SALARY         REAL);''')
+       (ID        INT     NOT NULL  PRIMARY KEY ,
+        NAME      TEXT    NOT NULL,
+        AGE       INT     NOT NULL,
+        ADDRESS   CHAR(50),
+        SALARY    REAL);''')
+      
       print "Table created successfully"
 
       conn.commit()
